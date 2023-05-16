@@ -11,13 +11,13 @@
     }
 
     .left-side {
-      flex: 3;
-      padding: 20px;
+      flex: 2;
+      padding: 10px;
       background-color: #f1f1f1;
     }
 
     .right-side {
-      flex: 7;
+      flex: 8;
       padding: 5px;
       background-color: #eedfab;
       display: flex;
@@ -31,11 +31,11 @@
       }
 
       .left-side {
-        flex: 1;
+        flex: 0; 
       }
 
       .right-side {
-        flex: 1;
+        flex: 0;
       }
       .navbar__icons {
       display: none;
@@ -44,7 +44,7 @@
 
     .search-box {
       display: block;
-      width: 150px;
+      width: 300px;
       margin-bottom: 20px;
       animation: slide-in 1s ease-in-out;
       
@@ -89,6 +89,8 @@
 
     .list-item.active {
       color: red;
+      font-size: large;
+      font-weight: bold;
     }
 
     @keyframes slide-in {
@@ -256,7 +258,7 @@ a{
       </ul>
     </div>
     <div class="right-side">
-      <iframe id="videoPlayer" width="700" height="450" src="" frameborder="0" allowfullscreen></iframe>
+      <iframe id="videoPlayer" width="800" height="550" src="" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
