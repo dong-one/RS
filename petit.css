@@ -1,0 +1,118 @@
+/* Google Web Font
+@import url('https://fonts.googleapis.com/css?
+family=Montserrat:300,400,500&display=swap');
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 100px 150px 1fr 150px 100px;
+
+    grid-template-areas: 'header header header'
+                         'menu main top'
+                         'menu main aside'
+                         'menu main bottom'
+                         'footer footer footer';
+}
+.container > div {
+    display: grid;/* 밑에 인식이 안돼서 따로 추가한것*/
+    
+}
+.container > div {
+    
+    background-color: rgb(182, 229, 248);
+    padding: 20px;
+    border: 1px solid black
+    display: grid;/* 이건왜 인식이 안되는거죠?*/
+    /*justify-items: center;/* 좌우 가운데 정열*/
+    /*align-items: center;/* 상하 가운데 정열*/
+    /*font-size:30px;*/
+}
+.header {
+    grid-area: header;
+    font-family: 궁서;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-rows: repeat(1, 50px 30px 30px 30px 100px); /* 그리드 컨테이너의 열 설정 */
+    grid-gap: 10px; /* 리스트 요소들 사이의 간격 */  
+    font-size: 30px;
+    
+}
+.menu li{
+    text-align: left;
+    font-size: 20px;  
+}
+.mall{
+    display: grid;
+    grid-template-rows: repeat(1, 40px 20px 20px 100px); 
+    grid-gap: 20px;  /*리스트 요소들 사이의 간격 */ 
+    font-size: 30px; 
+}
+.main {
+    grid-area: main;
+}
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-rows: repeat(1, 50px 0px); 
+    grid-gap: 0px;  /* ADDRESS큰메뉴와 리스트 요소들 사이의 간격 */ 
+    font-size: 20px;
+    
+}
+.address{
+    display: grid;
+    font-size: 16px;
+    grid-gap: 15px  
+}
+.aside {
+    grid-area: aside;
+}
+.bottom{ 
+    grid-area: bottom;
+    font-size: 20px;
+}
+.ario{
+    display: grid;
+    font-size: 16px;
+    grid-gap: 15px 
+}
+.footer {
+    grid-area: footer;
+}
+details {
+    display: grid;
+    margin-left: 15px;
+    margin-bottom:20px; /*열기전 ARIO항목의 바닥간격 */
+    font-size: 18px;/*열었을때 항목의 글자크기*/
+    color: #655;
+   
+   
+    
+}
+details[open] summary {
+    font-weight: 00;
+    margin-left: 0px;
+}
+
+details > summary {
+    color: #333;
+    font-size: 16px; /*화살표 글자 크기,열기전과 후 크기는 같음 */
+    padding: 7px 0; /* 열었을때 ARIO 와 항목사이 간격 */
+    margin-top: 15px; /*열었을때 ARIO 와 Pay stubs 간격 */
+}
+a{
+    text-decoration: none;
+    /*font-size: 18px;  열었을때 항목 글자 크기. 디테일 폰트크기와 겹침 */
+    margin-bottom: 7px; /* 디테일 열었을때 항목 간격은 a테그로 연결되어 있어 여기서 수정 */
+}
