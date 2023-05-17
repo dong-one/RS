@@ -20,8 +20,6 @@ a{
   align-items: center;
   background-color: #263343;
   padding: 8px 12px;  /* 위에는 8 양옆은 12*/
-  
-  
 }
 
 .navbar__logo{
@@ -58,7 +56,7 @@ a{
 
 .navbar__icons li {
   
-  padding: 8px 10px; /*깃에서 세로정렬되는 이유로 14에서10으로 변경*/
+  padding: 8px 14px;
 
 }
 .navbar__toogleBtn{
