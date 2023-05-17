@@ -10,6 +10,8 @@
     .container {
       display: flex;
       flex-direction: row;
+      align-self: start;
+      width: 1280px;
     }
 
     .left-side {
@@ -23,15 +25,20 @@
       padding: 5px;
       background-color: #eedfab;
       display: flex;
-      justify-content: center;
-      align-items:flex-start;
+      justify-content: center; /*오른쪽화면 영상위치*/
+      
+      
     }
+    .right-side iframe {
+    align-self: flex-start;
+    margin-left: 15px;
+}
 
     @media screen and (max-width: 768px){
       .container {
         flex-direction: column;
       }
-
+      
       
       
     }
@@ -120,7 +127,9 @@ a{
   text-decoration: none;
   color: var(--text-color);
 }
-
+.navbar__menu li{
+  padding: 8px 30px;
+}
   </style>
 </head>
 <body>
@@ -132,11 +141,11 @@ a{
     </div>
     
     <ul class="navbar__menu">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Client</a></li>
-      <li><a href="./petit.html">petit ta petit</a></li>
-      <li><a href="#">Tablawarw</a></li>
-      <li><a href="./edu.html">Edu</a></li>
+      <li><a href="#">EPMA</a></li>
+      <li><a href="#">Hanstyle</a></li>
+      <li><a href="#">Stepcare</a></li>
+      <li><a href="#">Hmall.Tas</a></li>
+      <li><a href="#">EDI</a></li>
       
   
     </ul>
@@ -171,22 +180,7 @@ a{
         <li class="list-item" data-video-url="">상품교환</li>
         <li class="list-item" data-video-url="">재고조회(단일품목)</li>
         <li class="list-item" data-video-url="">재고조회(단일품목/상세검색)</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
-        <li class="list-item" data-video-url="">이름</li>
+ 
 
 
         
@@ -197,11 +191,11 @@ a{
     </div>
     
       <div class="right-side">
-        <iframe id="videoPlayer" width="800" height="550" src="" frameborder="0" allowfullscreen></iframe>
+        <iframe id="videoPlayer" width="800" height="600" src="" frameborder="0" allowfullscreen></iframe>
       </div>
     
   </div>
-
+</body>
   <script>
       function filterList(searchTerm) {
     var listItems = document.getElementsByClassName('list-item');
