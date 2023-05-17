@@ -2,8 +2,10 @@
 <html>
 <head>
   <title>EDU</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/db8def3bd8.js"
    crossorigin="anonymous"></script>
+   <script src="./main.js" defer></script>
   <style>
     .container {
       display: flex;
@@ -126,63 +128,7 @@ a{
   text-decoration: none;
   color: var(--text-color);
 }
-.navbar{  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #263343;
-  padding: 8px 12px;  /* 위에는 8 양옆은 12*/
-  margin-right: 0;
-}
 
-.navbar__logo{
-  font-size: 24px;
-  color: var(--text-color)
-}
-
-.navbar__logo i{
-  color: #d49466;
-}
-.navbar__menu li:hover{ /*호버기능*/
-  background-color: #d49466;
-  border-radius: 4px;
-}
-.navbar__menu{
-  display: flex;
-  list-style: none; /*동그라미 닷 모양 없앰*/
-  padding-left: 0;
-}
-
-.navbar__menu li{
-  padding: 8px 12px; /*패딩을 쓰는이유는 나중에 마우스를 올렸을때 백그라운드를 넓게 쓰기위함 마진을 넣으면 좁아지지만 패딩은 안으로 박스안으로 넣기때문에 좀더 넓게 쓸수있음*/
-
-}
-
-.navbar__icons {
-
-  list-style: none;
-  color: white;
-  display: flex;
-  padding-left: 0px;
-  font-size: 24px;
-}
-
-.navbar__icons li {
-  
-  padding: 8px 14px;
-
-}
-.navbar__toogleBtn{
-  display: none;
-  position: absolute;
-  right: 32px;
-  font-size: 24px;
-  color: #d49466;
-}
-.img div{
-  display: block;
-  
-}
   </style>
 </head>
 <body>
